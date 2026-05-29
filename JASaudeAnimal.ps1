@@ -153,13 +153,10 @@ $appsBasicos = @(
     @{ Nome="VC Redist x86 2015+";      Winget="Microsoft.VCRedist.2015+.x86" }
     @{ Nome="VC Redist x64 2015+";      Winget="Microsoft.VCRedist.2015+.x64" }
     # .NET Runtimes
-    @{ Nome=".NET Desktop Runtime 8 x86"; Winget="Microsoft.DotNet.DesktopRuntime.8" }
-    @{ Nome=".NET Desktop Runtime 8 x64"; Winget="Microsoft.DotNet.DesktopRuntime.8" }
-    @{ Nome=".NET Desktop Runtime 9 x86"; Winget="Microsoft.DotNet.DesktopRuntime.9" }
+    @{ Nome=".NET Desktop Runtime 8 x86"; Winget="Microsoft.DotNet.DesktopRuntime.8.x86" }
+    @{ Nome=".NET Desktop Runtime 8 x64"; Winget="Microsoft.DotNet.DesktopRuntime.8.x64" }
     @{ Nome=".NET Desktop Runtime 9 x64"; Winget="Microsoft.DotNet.DesktopRuntime.9" }
-    @{ Nome=".NET Desktop Runtime 10 x86";Winget="Microsoft.DotNet.DesktopRuntime.10" }
-    @{ Nome=".NET Desktop Runtime 10 x64";Winget="Microsoft.DotNet.DesktopRuntime.10" }
-    @{ Nome=".NET Framework 4.8.1";     Winget="Microsoft.DotNet.Framework.DeveloperPack_4" }
+    @{ Nome=".NET Desktop Runtime 10 x64";Winget="Microsoft.DotNet.DesktopRuntime.10" }eeeeeeeee
     # Comunicacao
     @{ Nome="OneDrive";                 Winget="Microsoft.OneDrive" }
     @{ Nome="Zoom";                     Winget="Zoom.Zoom" }
@@ -171,15 +168,14 @@ $appsBasicos = @(
 # Apps individuais (checkboxes separados)
 $appsIndividuais = @(
     @{ Nome="Adobe Acrobat Reader 64-bit"; Winget="Adobe.Acrobat.Reader.64-bit";  Desc="Leitor PDF oficial Adobe (64-bit)" }
-    @{ Nome="FortiClient VPN Only";        Winget="Fortinet.FortiClientVPN";       Desc="Cliente VPN Fortinet (apenas VPN)" }
-    @{ Nome="Office 365 Setup";            Winget="Microsoft.Office";              Desc="Microsoft Office 365 (instalador)" }
     @{ Nome="PDF24 Creator";               Winget="geeksoftwareGmbH.PDF24Creator";  Desc="Criador e editor de PDF gratuito" }
-    @{ Nome="CutePDF Writer";              Winget="CutePDF.CutePDFWriter";          Desc="Impressora virtual para criar PDFs" }
+    @{ Nome="Office 365 Setup";            Winget="Microsoft.Office";              Desc="Microsoft Office 365 (instalador)" }
+    @{ Nome="CutePDF Writer";              Winget="AcroSoftware.CutePDFWriter";    Desc="Impressora virtual para criar PDFs" }
     @{ Nome="OBS Studio";                  Winget="OBSProject.OBSStudio";           Desc="Gravacao e streaming de video" }
     @{ Nome="Java 8 (JRE)";               Winget="Oracle.JavaRuntimeEnvironment";  Desc="Java Runtime Environment 8" }
     @{ Nome="VS Code";                     Winget="Microsoft.VisualStudioCode";     Desc="Editor de codigo Microsoft" }
     @{ Nome="VLC";                         Winget="VideoLAN.VLC";                   Desc="Player de midia universal" }
-    @{ Nome="Google Earth Pro";            Winget="Google.GoogleEarthPro";          Desc="Explorador de mapas 3D" }
+    @{ Nome="Google Earth Pro";            Winget="Google.EarthPro";          Desc="Explorador de mapas 3D" }
 )
 
 # =================================================================
