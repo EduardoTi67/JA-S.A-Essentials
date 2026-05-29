@@ -156,7 +156,7 @@ $appsBasicos = @(
     @{ Nome=".NET Desktop Runtime 8 x86"; Winget="Microsoft.DotNet.DesktopRuntime.8.x86" }
     @{ Nome=".NET Desktop Runtime 8 x64"; Winget="Microsoft.DotNet.DesktopRuntime.8.x64" }
     @{ Nome=".NET Desktop Runtime 9 x64"; Winget="Microsoft.DotNet.DesktopRuntime.9" }
-    @{ Nome=".NET Desktop Runtime 10 x64";Winget="Microsoft.DotNet.DesktopRuntime.10" }eeeeeeeee
+    @{ Nome=".NET Desktop Runtime 10 x64";Winget="Microsoft.DotNet.DesktopRuntime.10" }
     # Comunicacao
     @{ Nome="OneDrive";                 Winget="Microsoft.OneDrive" }
     @{ Nome="Zoom";                     Winget="Zoom.Zoom" }
