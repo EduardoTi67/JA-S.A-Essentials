@@ -13,9 +13,9 @@ Add-Type -AssemblyName System.Drawing
 $corFundo       = [System.Drawing.Color]::FromArgb(245, 248, 245)
 $corPainel      = [System.Drawing.Color]::FromArgb(255, 255, 255)
 $corBorda       = [System.Drawing.Color]::FromArgb(200, 220, 200)
-$corDestaque    = [System.Drawing.Color]::FromArgb(46, 139, 87)
-$corAmarelo     = [System.Drawing.Color]::FromArgb(180, 150, 30)
-$corVerde       = [System.Drawing.Color]::FromArgb(46, 139, 87)
+$corDestaque    = [System.Drawing.ColorTranslator]::FromHtml("#19984B")
+$corAmarelo     = [System.Drawing.ColorTranslator]::FromHtml("#EECD65")
+$corVerde       = [System.Drawing.ColorTranslator]::FromHtml("#19984B")
 $corVerdeClaro  = [System.Drawing.Color]::FromArgb(220, 240, 220)
 $corAmareloClr  = [System.Drawing.Color]::FromArgb(255, 243, 205)
 $corVermelho    = [System.Drawing.Color]::FromArgb(200, 50, 50)
@@ -27,7 +27,7 @@ $corTabHover    = [System.Drawing.Color]::FromArgb(210, 235, 210)
 $corSidebar     = [System.Drawing.Color]::FromArgb(30, 80, 50)
 $corSidebarText = [System.Drawing.Color]::FromArgb(220, 245, 220)
 $corSidebarHov  = [System.Drawing.Color]::FromArgb(46, 110, 70)
-$corSidebarSel  = [System.Drawing.Color]::FromArgb(46, 139, 87)
+$corSidebarSel  = [System.Drawing.ColorTranslator]::FromHtml("#19984B")
 
 # --- Funcoes Core ---
 function Escrever-Log {
@@ -421,6 +421,12 @@ $script:chkBasicos.BackColor = $corPainel
 $script:chkBasicos.Location  = New-Object System.Drawing.Point(14, 88)
 $script:chkBasicos.Size      = New-Object System.Drawing.Size(660, 26)
 $script:chkBasicos.Cursor    = [System.Windows.Forms.Cursors]::Hand
+
+# Visual Moderno (Flat)
+$script:chkBasicos.FlatStyle = "Flat"
+$script:chkBasicos.FlatAppearance.BorderSize = 0
+$script:chkBasicos.FlatAppearance.CheckedBackColor = $corVerdeClaro
+
 $script:chkBasicos.add_CheckedChanged({ Atualizar-ContadorInst })
 $pnlBlocoBasico.Controls.Add($script:chkBasicos)
 
@@ -470,6 +476,12 @@ foreach ($app in $appsIndividuais) {
     $chk.Location  = New-Object System.Drawing.Point(4, 6)
     $chk.Size      = New-Object System.Drawing.Size(280, 22)
     $chk.Cursor    = [System.Windows.Forms.Cursors]::Hand
+
+    # Visual Moderno (Flat)
+    $chk.FlatStyle = "Flat"
+    $chk.FlatAppearance.BorderSize = 0
+    $chk.FlatAppearance.CheckedBackColor = $corVerdeClaro
+
     $chk.add_CheckedChanged({ Atualizar-ContadorInst })
     $pnlApp.Controls.Add($chk)
 
